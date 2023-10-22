@@ -6,7 +6,7 @@ public class SaveOrder {
     private String product = prompt("product:");
     private int qnt = Integer.parseInt(prompt("qnt: "));
 
-    private int price = Integer.parseInt(prompt("price: "));
+   private double price = Double.parseDouble(prompt("price:"));
 
     public String getClientName() {
         return clientName;
@@ -20,7 +20,7 @@ public class SaveOrder {
         return qnt;
     }
 
-    public int getPrice() {
+    public double getPrice() {
         return price;
     }
 
